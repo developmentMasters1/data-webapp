@@ -2,9 +2,9 @@
 import React, { useState , useEffect} from 'react';
 import { Card } from 'antd';
 import Plot from "react-plotly.js"
-import './Graph.css';
+import  './css/Graph.css';
 import Tag from './Tag';
-import {metric, channel} from './index'; 
+import {metric, channel} from './atom/atom'; 
 import { useRecoilState } from 'recoil';
 
 export interface DataProps {
