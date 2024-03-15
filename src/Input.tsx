@@ -10,7 +10,7 @@ import "./Input.css";
 const CheckboxGroup = Checkbox.Group;
 
 const getChannel = async () => {
-  const response = await fetch("http://localhost:8000/channels");
+  const response = await fetch("https://data-api-vpq8.onrender.com/channels");
   const data = await response.json();
 
   const val = data.data.map((item: any) => ({
@@ -30,7 +30,7 @@ const Input = ({ handleMenuClick }: { handleMenuClick: (arg: string) => void }) 
   const handleChange = async (value: string) => {
     setChannelId(value);
 
-    const response = await fetch(`http://localhost:8000/metrics?channel_id=${value}`);
+    const response = await fetch(`https://data-api-vpq8.onrender.com/metrics?channel_id=${value}`);
     const data = await response.json();
 
     setPlainOptions(data.data);
