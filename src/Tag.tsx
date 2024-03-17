@@ -60,6 +60,7 @@ const Tag: React.FC<TagProps> = ({ closeModal, selectedItem, metricData }) => {
         tag: tag,
         timestamp: "10 min",
         to_time: timestamp,
+        value:  metric,
       };
       openNotification();
       setReadLog((readlog) => {

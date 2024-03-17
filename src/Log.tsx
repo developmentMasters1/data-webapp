@@ -49,6 +49,11 @@ const Log: React.FC = () => {
       key: "to_time",
     },
     {
+      title: "Value",
+      dataIndex: "value",
+      key: "value",
+    },
+    {
       title: "Action",
       key: "action",
       render: (_, record: LogType) => (

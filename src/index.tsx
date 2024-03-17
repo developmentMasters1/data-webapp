@@ -4,12 +4,12 @@ import { RecoilRoot, atom } from "recoil";
 
 export interface LogType {
   key: string;
-  
   channel_id: string;
   metric: string;
   tag: string;
   timestamp: string;
   to_time: string;
+  value: number ; 
 }
 
 const root = ReactDOM.createRoot(
